@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: grafana-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: example.snapwork.com
+    http:
+      paths:
+      - path: /login
+        pathType: Prefix
+        backend:
+          service: 
+            name: moitoring-grafana-ext
+            port:
+              number: 80

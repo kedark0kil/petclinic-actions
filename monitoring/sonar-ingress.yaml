@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: sonar-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: example.snapwork.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: sonarqube-sonarqube-ext
+            port:
+              number: 9000
