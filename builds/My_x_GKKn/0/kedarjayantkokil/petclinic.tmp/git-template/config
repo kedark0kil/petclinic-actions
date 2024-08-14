@@ -1,8 +1,0 @@
-[init]
-	defaultBranch = none
-[fetch]
-	recurseSubmodules = false
-[transfer]
-	bundleURI = true
-[http "https://gitlab.com"]
-	sslCAInfo = /home/kd/Documents/petclinic/builds/My_x_GKKn/0/kedarjayantkokil/petclinic.tmp/CI_SERVER_TLS_CA_FILE
