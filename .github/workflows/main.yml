@@ -42,4 +42,4 @@ jobs:
           push: true
           tags: kedark0kil/petclinic-actions:latest
           context: petclinic
-          file: petclinic-actions/dockerfile
+          file: ../../dockerfile
