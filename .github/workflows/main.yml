@@ -9,7 +9,7 @@ jobs:
     steps:
       - 
         name: build image
-        uses: docker://docker
+        #uses: docker://docker
         run: |
           docker build -t petclinic-actions .
         #with:
