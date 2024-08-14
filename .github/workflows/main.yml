@@ -41,3 +41,4 @@ jobs:
         with:
           push: true
           tags: kedark0kil/petclinic-actions:latest
+
