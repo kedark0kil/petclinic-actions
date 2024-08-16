@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: registry.gitlab.com/kedarjayantkokil/petclinic:v1 
+        image: kedark0kil/petclinic-actions:latest 
         ports:
         - containerPort: 8080
 
