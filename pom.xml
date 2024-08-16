@@ -384,7 +384,7 @@
       <properties>
           <!-- Optional URL to server. Default value is http://localhost:9000 -->
           <sonar.host.url>
-            http://example.snapwork.com:31032
+            https://example.snapwork.com:31032
           </sonar.host.url>
       </properties>
     </profile>
