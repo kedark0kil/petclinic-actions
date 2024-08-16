@@ -72,6 +72,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        uses: actions/cache@v1
         with:
           path: ~/.m2/settings.xml
           key: ${{ runner.os }}-m2-${{ hashFiles('**/settings.xml') }}
