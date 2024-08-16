@@ -265,7 +265,7 @@ extraContainers: []
 ##
 caCerts:
   enabled: false
-  image: adoptopenjdk/openjdk11:alpine
+  image: adoptopenjdk/openjdk22:alpine
   secret: your-secret
 
 initSysctl:
