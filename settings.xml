@@ -16,4 +16,14 @@
             </properties>
         </profile>
      </profiles>
+       <proxies>
+   <proxy>
+      <id>sonarsource</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>example.snapwork.com</host>
+      <port>31032</port>
+      <nonProxyHosts>www.google.com|*.snapwork.com</nonProxyHosts>
+    </proxy>
+  </proxies>
 </settings>
