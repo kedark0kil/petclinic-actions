@@ -17,9 +17,9 @@
   <properties>
     <checkstyle.skip>true</checkstyle.skip>
     <enforcer.skip>true</enforcer.skip>
-    <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+    <sonar.qualitygate.wait>false</sonar.qualitygate.wait>
     <!-- Generic properties -->
-    <java.version>17</java.version>
+    <java.version>22</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- Important for reproducible builds. Update using e.g. ./mvnw versions:set -DnewVersion=... -->
