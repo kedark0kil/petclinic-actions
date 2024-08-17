@@ -2,28 +2,14 @@
     <pluginGroups>
         <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
     </pluginGroups>
-    <profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                  http://example.snapwork.com:31032
-                </sonar.host.url>
-            </properties>
-        </profile>
-     </profiles>
-       <proxies>
-   <proxy>
-      <id>sonarsource</id>
-      <active>true</active>
-      <protocol>http</protocol>
-      <host>example.snapwork.com</host>
-      <port>31032</port>
-      <nonProxyHosts>www.google.com|*.snapwork.com</nonProxyHosts>
-    </proxy>
-  </proxies>
+    <proxies>
+        <proxy>
+           <id>sonarsource</id>
+           <active>true</active>
+           <protocol>http</protocol>
+           <host>example.snapwork.com</host>
+           <port>31032</port>
+           <nonProxyHosts>www.google.com|*.snapwork.com</nonProxyHosts>
+        </proxy>
+    </proxies>
 </settings>
