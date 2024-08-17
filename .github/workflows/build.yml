@@ -33,4 +33,4 @@ jobs:
           #GITHUB_TOKEN: ${{ secrets.TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar -Dsonar.projectKey=kedark0kil_petclinic-actions_AZFacUIdYrdNYAkhpVRt
+        run: mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar -Dsonar.projectKey=kedark0kil_petclinic-actions_AZFacUIdYrdNYAkhpVRt
