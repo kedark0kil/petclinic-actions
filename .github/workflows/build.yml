@@ -27,7 +27,7 @@ jobs:
     - name: Run Trivy scan
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: petclinic-actions:latest  
+        image-ref: kedark0kil/petclinic-actions:latest  
 
 #name: Build
 #on:
