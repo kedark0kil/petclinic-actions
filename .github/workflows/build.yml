@@ -20,7 +20,7 @@ jobs:
       run: docker build -t  ../dockerfile
 
     - name: Run Trivy scan
-      uses: aquasecurity/trivy-action@latest
+      uses: aquasecurity/trivy-action@master
       with:
         image-ref: petclinic-actions:latest  
 
