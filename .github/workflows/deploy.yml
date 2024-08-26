@@ -10,6 +10,8 @@ Jobs:
   deploy:
     name: deploy app
     runs-on: ubuntu-latest
+    steps:
+    name: minikube deployment
     run: 
     - kubectl apply -f deployment/app-deployment.yaml
     - kubectl apply -f deployment/app-service.yaml
