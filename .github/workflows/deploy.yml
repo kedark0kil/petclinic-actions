@@ -11,16 +11,15 @@ jobs:
     name: deploy app
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set up Kubectl
-      uses: azure/k8s-set-context@v1
-      with:
-        kubeconfig: ${{ secrets.KUBECONFIG }}
-    #- name: Start minikube
-    #  uses: medyagh/setup-minikube@master
-    #- name: Try the cluster !
-    #  run: kubectl get pods -A 
+    - uses: actions/checkout@v4
+    #- name: Set up Kubectl
+    #  uses: azure/k8s-set-context@v1
+    #  with:
+    #    kubeconfig: ${{ secrets.KUBECONFIG }}
+    - name: Start minikube
+      uses: medyagh/setup-minikube@master
+    - name: Try the cluster !
+      run: kubectl get pods -A 
     - name: minikube deployment
       run: |
           kubectl apply -f deployment/app-deployment.yaml
