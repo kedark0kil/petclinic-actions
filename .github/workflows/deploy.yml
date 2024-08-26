@@ -1,0 +1,13 @@
+name: deploy to cluster
+
+on:
+  push:
+    branches:
+      - sonar
+
+Jobs:
+  deploy:
+    name: deploy app
+    run: 
+    - kubectl apply -f deployment/app-deployment.yaml
+    - kubectl apply -f deployment/app-service.yaml
