@@ -6,9 +6,10 @@ name: Java CI with Maven
 on:
   push:
     branches: sonar
+  paths: .github/workflows/maven-build.yml
   pull_request:
     branches: sonar
-  paths: .github/workflows/maven-build.yml
+  
 
 jobs:
   build:
