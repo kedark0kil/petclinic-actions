@@ -24,5 +24,7 @@ jobs:
     #      echo -n "verifying images:"
     #      docker images  
     - name: minikube deployment
-      run: kubectl apply -f ../../deployment/app-deployment.yaml 
+      run: kubectl apply -f
+      file: ../../deployment/app-service.yaml
       #run: kubectl apply -f deployment/app-service.yaml
+      
