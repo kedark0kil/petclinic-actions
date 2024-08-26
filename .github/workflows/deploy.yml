@@ -24,3 +24,8 @@ jobs:
       run: |
           kubectl apply -f deployment/app-deployment.yaml
           kubectl apply -f deployment/app-service.yaml
+          kubectl expose service petclinic-service --type=NodePort --name=petclinic-service-ext 
+    - name: Test service URLs
+      run: |
+          minikube service list
+          minikube service nodejs-app --url
