@@ -7,10 +7,9 @@ on:
   push:
     branches: sonar
   paths: .github/workflows/maven-build.yml
-  pull_request:
-    branches: sonar
+  #pull_request:
+  #  branches: sonar
   
-
 jobs:
   build:
 

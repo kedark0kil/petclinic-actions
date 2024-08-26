@@ -1,3 +1,5 @@
+name: build and push image
+
 on:
   push:
     branches:
