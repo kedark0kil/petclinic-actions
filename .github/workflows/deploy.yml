@@ -11,20 +11,12 @@ jobs:
     name: deploy app
     runs-on: ubuntu-latest
     steps:
-    #- uses: actions/checkout@v2
-    #- name: Start minikube
-    #  uses: medyagh/setup-minikube@master
-    #- name: Try the cluster !
-    #  run: kubectl get pods -A
-    #- name: Build image
-    #  run: |
-    #      export SHELL=/bin/bash
-    #      eval $(minikube -p minikube docker-env)
-    #      docker build -f ./Dockerfile -t devopshint/node-app:latest .
-    #      echo -n "verifying images:"
-    #      docker images  
+    - uses: actions/checkout@v2
+    - name: Start minikube
+      uses: medyagh/setup-minikube@master
+    - name: Try the cluster !
+      run: kubectl get pods -A 
     - name: minikube deployment
-      run: kubectl apply -f
-      file: ../../deployment/app-service.yaml
-      #run: kubectl apply -f deployment/app-service.yaml
-      
+      run: |
+          kubectl apply -f ../../deployment/app-deployment.yaml
+          kubectl apply -f ../../deployment/app-service.yaml
