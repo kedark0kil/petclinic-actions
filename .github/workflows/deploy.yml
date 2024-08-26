@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - sonar
+    paths: .github/workflows/deploy.yml
 
 Jobs:
   deploy:
     name: deploy app
+    runs-on: ubuntu-latest
     run: 
     - kubectl apply -f deployment/app-deployment.yaml
     - kubectl apply -f deployment/app-service.yaml

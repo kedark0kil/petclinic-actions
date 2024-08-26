@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - sonar
+    paths: .github/workflows/build.yml
 
 jobs:
   trivy:

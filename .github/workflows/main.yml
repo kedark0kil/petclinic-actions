@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - sonar # the name of your main branch
+    paths: .github/workflows/main.yml
   pull_request:
     types: [opened, synchronize, reopened]
   
